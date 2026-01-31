@@ -20,11 +20,11 @@ Whether for educational purposes or smart recycling centers, ClassifAI makes sus
 ---
 
 ## 🌟 Key Features
-* ** Real-Time Detection:** Upload images instantly to detect waste types.
-* ** Advanced AI:** Powered by a fine-tuned **MobileNetV2** (Keras) model for high accuracy.
-* ** Eco-Insights:** Displays the **Carbon Footprint** (CO₂ emission estimates) for every item detected.
-* ** SDG Integration:** Maps waste to specific United Nations Sustainable Development Goals.
-* ** Blazing Fast:** Optimized for low-latency performance on Streamlit Cloud.
+* **Real-Time Detection:** Upload images instantly to detect waste types.
+* **Advanced AI:** Powered by a fine-tuned **MobileNetV2** (Keras) model for high accuracy.
+* **Eco-Insights:** Displays the **Carbon Footprint** (CO₂ emission estimates) for every item detected.
+* **SDG Integration:** Maps waste to specific United Nations Sustainable Development Goals.
+* **Blazing Fast:** Optimized for low-latency performance on Streamlit Cloud.
 
 ---
 
