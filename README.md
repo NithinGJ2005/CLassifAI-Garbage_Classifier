@@ -56,6 +56,7 @@ Follow these steps to run the app on your local machine.
 ```bash
 git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
 cd your-repo-name
+```
 
 ### 2. Create a Virtual Environment (Recommended)
 ```bash
@@ -66,3 +67,28 @@ venv\Scripts\activate
 # Mac/Linux
 python3 -m venv venv
 source venv/bin/activate
+```
+
+### 3. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Launch the App
+```bash
+streamlit run app.py
+```
+The app should open automatically in your browser at http://localhost:8501.
+
+## 📝 Usage Guide
+1. **Launch the App:** Open the link or run locally.
+
+2. **Upload Image:** Click "Browse Files" to select an image of waste (JPG, PNG).
+
+3. **Click Classify:** Hit the blue "Classify Waste" button.
+
+4. **View Results:** See the predicted category (e.g., Plastic).
+
+  * Check the confidence score.
+
+  * Read the Carbon Footprint facts and SDG relevance.
