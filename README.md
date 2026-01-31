@@ -89,6 +89,26 @@ The app should open automatically in your browser at http://localhost:8501.
 
 4. **View Results:** See the predicted category (e.g., Plastic).
 
-&nbsp;&nbsp;&nbsp;&nbsp;* Check the confidence score.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Check the confidence score.
 
-&nbsp;&nbsp;&nbsp;&nbsp;* Read the Carbon Footprint facts and SDG relevance.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Read the Carbon Footprint facts and SDG relevance.
+
+## 📂 Project Structure
+
+## 🤝 Contributing
+Contributions are always welcome! If you have ideas for new features (like Camera support or Geolocation), feel free to fork the repo.
+
+1. **Fork the repository.**
+
+2. **Create a Branch:** git checkout -b feature/YourFeature
+
+3. **Commit changes:** git commit -m 'Add some AmazingFeature'
+
+4. **Push to branch:** git push origin feature/YourFeature
+
+5. **Open a Pull Request.**
+
+## 📜 License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+<div align="center"> <p>Made with ❤️ by <b>Nithin G J</b></p> <p> <a href="https://www.google.com/search?q=https://github.com/NithinGJ2005"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/GitHub-Profile-black%3Fstyle%3Dfor-the-badge%26logo%3Dgithub" alt="GitHub Profile" /> </a> <a href="https://classif-ai-a-garbage-classifier-app.streamlit.app/"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/Live-Demo-FF4B4B%3Fstyle%3Dfor-the-badge%26logo%3Dstreamlit" alt="Live Demo" /> </a> </p> </div>
