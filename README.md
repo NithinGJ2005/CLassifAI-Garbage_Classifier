@@ -94,6 +94,26 @@ The app should open automatically in your browser at http://localhost:8501.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* Read the Carbon Footprint facts and SDG relevance.
 
 ## 📂 Project Structure
+```bash
+ClassifAI/
+├── artifacts/
+│   └── models/
+│       └── garbage_classifier.h5  # Trained Deep Learning Model
+├── assets/
+│   └── sdg/                       # Icons for Sustainable Development Goals
+├── data/
+│   └── raw/                       # Raw Dataset Images
+│       ├── cardboard/
+│       ├── glass/
+│       ├── metal/
+│       ├── paper/
+│       ├── plastic/
+│       └── trash/
+├── app.py                         # Main Application Logic
+├── requirements.txt               # Project Dependencies
+├── README.md                      # Project Documentation
+└── .gitignore                     # Git Ignore File
+```
 
 ## 🤝 Contributing
 Contributions are always welcome! If you have ideas for new features (like Camera support or Geolocation), feel free to fork the repo.
