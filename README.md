@@ -20,9 +20,9 @@
 ## 📸 Screenshot
 
 
-![Image](https://github.com/user-attachments/assets/2e093adf-188a-4512-bdf1-934175d97a31)
+![Image](https://github.com/NithinGJ2005/CLassifAI/blob/main/assets/Screenshot%202026-01-31%20183621.png)
 
-![classifier](https://github.com/user-attachments/assets/d3de843e-8d5f-4ab5-bc63-e7b7853b044b)
+![classifier](https://github.com/NithinGJ2005/CLassifAI/blob/main/assets/Screenshot%202026-01-31%20183720.png)
 
 
 
