@@ -1,141 +1,58 @@
-# ♻️**ClassifAI - A Garbage Classifier App**   
-**An AI-powered Real-Time Waste Detector using Streamlit & TensorFlow**
+# ♻️ ClassifAI: Smart Waste Classification System
+
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://classif-ai-a-garbage-classifier-app.streamlit.app/)
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
+> **"Turning Trash into Data for a Greener Planet."**
 
 ---
 
-## **Overview**  
-**Garbage Classifier** is a smart web application built with **Streamlit**, allowing users to classify waste in real time using a trained **Keras deep learning model**. Whether it's a biodegradable or non-biodegradable, this app helps promote sustainable waste segregation with the power of machine learning and computer vision.
+## 📖 Overview
+**ClassifAI** is a state-of-the-art web application powered by **Deep Learning** designed to automate waste segregation. Built with **Streamlit** and **TensorFlow**, it accurately identifies garbage types from images and provides actionable insights on:
+* **Material Classification:** (Glass, Plastic, Paper, Metal, Cardboard, Trash)
+* **Environmental Impact:** Real-time Carbon Footprint estimates.
+* **Sustainability:** Alignment with UN Sustainable Development Goals (SDGs).
+
+Whether for educational purposes or smart recycling centers, ClassifAI makes sustainability smart and simple.
 
 ---
 
-## **Features** 🚀  
-✅ **Real-time Waste Detection** – Upload an image or capture live to detect the type of waste.  
-✅ **Built with Deep Learning** – Uses a trained Keras model for high accuracy waste classification.  
-✅ **Clean Streamlit Interface** – Simple and intuitive UI for ease of use.  
-✅ **Instant Feedback** – Get classification results immediately upon uploading.  
-✅ **Lightweight Deployment** – Easily deployable on [Streamlit Cloud]([https://garbage-classifier-ai.streamlit.app/](https://classif-ai-a-garbage-classifier-app.streamlit.app/)).
+## 🌟 Key Features
+* ** Real-Time Detection:** Upload images instantly to detect waste types.
+* ** Advanced AI:** Powered by a fine-tuned **MobileNetV2** (Keras) model for high accuracy.
+* ** Eco-Insights:** Displays the **Carbon Footprint** (CO₂ emission estimates) for every item detected.
+* ** SDG Integration:** Maps waste to specific United Nations Sustainable Development Goals.
+* ** Blazing Fast:** Optimized for low-latency performance on Streamlit Cloud.
 
 ---
 
-## 📸 Screenshot
+## 📸 Interface Preview
 
-
-![Image](https://github.com/NithinGJ2005/CLassifAI/blob/main/assets/Screenshot%202026-01-31%20183621.png)
-
-![classifier](https://github.com/NithinGJ2005/CLassifAI/blob/main/assets/Screenshot%202026-01-31%20183720.png)
-
-
-
-## **Tech Stack** 🛠  
-- **Frontend & Deployment:** Streamlit  
-- **Backend:** Python  
-- **Deep Learning:** TensorFlow / Keras  
-- **Libraries:** NumPy, PIL, TensorFlow, Streamlit  
-- **Model File:** `keras_model_fixed.h5` 
+| **Upload & Classify** | **Results & Insights** |
+|:---------------------:|:----------------------:|
+| ![Upload Screen](https://github.com/NithinGJ2005/CLassifAI/blob/main/assets/Screenshot%202026-01-31%20183621.png?raw=true) | ![Results Screen](https://github.com/NithinGJ2005/CLassifAI/blob/main/assets/Screenshot%202026-01-31%20183720.png?raw=true) |
 
 ---
 
-## **Installation & Setup** 🏗  
+## 🛠️ Tech Stack
 
-### 1. Clone the repository:
+| Component | Technology |
+| :--- | :--- |
+| **Frontend** | [Streamlit](https://streamlit.io/) |
+| **Deep Learning** | [TensorFlow](https://www.tensorflow.org/) / [Keras](https://keras.io/) |
+| **Image Processing** | [Pillow (PIL)](https://python-pillow.org/) & [NumPy](https://numpy.org/) |
+| **Version Control** | Git & GitHub |
+| **Deployment** | Streamlit Cloud |
 
+---
+
+## 🏗️ Installation & Local Setup
+
+Follow these steps to run the app on your local machine.
+
+### 1. Clone the Repository
 ```bash
-git clone https://github.com/NithinGJ2005/NithinGJ.git
-cd your-repo-name
-```
-### **2. Create a Virtual Environment**
-```bash
-python -m venv .venv
-# Activate it
-# Windows:
-.venv\Scripts\activate
-# Mac/Linux:
-source .venv/bin/activate
-```
-
-### **3. Install Dependencies**
-
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use: venv\Scripts\activate
-```
-
-
-### **4. Start the Application**
-```bash
-streamlit run app.py
-
-```
----
-
-## **Usage Guide** 📝
-
-🔹 **Click Browse Files or Use Camera to upload an image of the waste.**
-
-🔹 **The model predicts whether the waste is Biodegradable or Non-Biodegradable.**
-
-🔹 **View the prediction and take action accordingly.**
-
-🔹 **You can re-upload to classify more waste.**
-
----
-
-## **Project Structure** 📂
-```bash
-Garbage-Classifier/
-│
-├── Glass/           # Folder containing glass waste
-│   ├── glass1.png
-│   ├── glass2.png
-│   ├── ...
-├── Plastic/           # Folder containing plastic waste
-│   ├── plastic1.png
-│   ├── plastic.png
-│   ├── ...
-├── app.py                     # Main Streamlit app file
-├── keras_model_fixed.h5       # Pre-trained model for waste classification
-├── labels.txt                 # Class labels for the model
-├── sustainable_dev_goal/      # Folder containing SDG icons
-│   ├── 12.png
-│   ├── 13.png
-│   ├── ...
-└── requirements.txt           # Python package dependencies
-
-
-
-```
----
-
-
-
-
-
-
-
----
-## **Contributing** 🤝
-Contributions are welcome! If you’d like to improve LetMeCut, feel free to fork the repo and submit a pull request.
-
-### **Steps to Contribute:**
-**Fork the repository**
-### **1. Create a new branch:**
-```bash
-git checkout -b feature-branch
-```
-
-### **2. Make your changes and commit:**
-
-```bash
-git commit -m "Added new feature"
-```
-### **3. Push to the branch:**
-```bash
-git push origin feature-branch
-```
-### **Open a Pull Request**
----
-## **License** 📜
-This project is licensed under the MIT License.
-
-💡 Developed with ❤️ by [Nithin G J](https://github.com/NithinGJ2005/NithinGJ)
-
+git clone [https://github.com/NithinGJ2005/CLassifAI.git](https://github.com/NithinGJ2005/CLassifAI.git)
+cd CLassifAI
