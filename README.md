@@ -22,3 +22,11 @@ The model was trained on the [Garbage Classification Dataset](https://www.kaggle
    ```bash
    git clone [https://github.com/YOUR_USERNAME/garbage-classifier-app.git](https://github.com/YOUR_USERNAME/garbage-classifier-app.git)
    cd garbage-classifier-app
+
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+
+3. **Run the App:**
+   ```bash
+   streamlit run app.py
