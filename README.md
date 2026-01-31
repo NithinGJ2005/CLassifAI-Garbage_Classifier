@@ -89,6 +89,6 @@ The app should open automatically in your browser at http://localhost:8501.
 
 4. **View Results:** See the predicted category (e.g., Plastic).
 
-&nbsp;&nbsp;* Check the confidence score.
+&nbsp;&nbsp;&nbsp;&nbsp;* Check the confidence score.
 
-&nbsp;&nbsp;* Read the Carbon Footprint facts and SDG relevance.
+&nbsp;&nbsp;&nbsp;&nbsp;* Read the Carbon Footprint facts and SDG relevance.
