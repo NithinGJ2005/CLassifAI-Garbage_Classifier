@@ -54,5 +54,15 @@ Follow these steps to run the app on your local machine.
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/NithinGJ2005/CLassifAI.git](https://github.com/NithinGJ2005/CLassifAI.git)
-cd CLassifAI
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+cd your-repo-name
+
+### 2. Create a Virtual Environment (Recommended)
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# Mac/Linux
+python3 -m venv venv
+source venv/bin/activate
