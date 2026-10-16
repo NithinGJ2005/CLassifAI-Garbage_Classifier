@@ -1,4 +1,4 @@
-# ClassifAI: Smart Waste Classification System
+# ♻️ClassifAI: Smart Waste Classification System
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://classif-ai-a-garbage-classifier-app.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
