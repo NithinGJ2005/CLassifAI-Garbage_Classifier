@@ -1,17 +1,17 @@
-# ♻️ ClassifAI: Smart Waste Classification System
+# ClassifAI: Smart Waste Classification System
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://classif-ai-a-garbage-classifier-app.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15+-orange.svg)](https://www.tensorflow.org/)
-[![Tests](https://img.shields.io/badge/Tests-20%20Passed-brightgreen.svg)](#-running-unit-tests)
-[![Accuracy](https://img.shields.io/badge/Test%20Accuracy-82.67%25-success.svg)](#-model-architecture--held-out-benchmark-results)
+[![Tests](https://img.shields.io/badge/Tests-20%20Passed-brightgreen.svg)](#running-unit-tests)
+[![Accuracy](https://img.shields.io/badge/Test%20Accuracy-82.67%25-success.svg)](#model-architecture--held-out-benchmark-results)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 > **"Turning Trash into Data for a Greener Planet."**
 
 ---
 
-## 📌 Overview
+## Overview
 
 **ClassifAI** is a deep-learning-powered web application engineered to automate waste segregation, promote circular economy practices, and raise climate awareness. Built with **Streamlit** and **TensorFlow / Keras**, ClassifAI identifies waste materials from uploaded images and provides actionable, data-backed insights on:
 
@@ -22,20 +22,20 @@
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-* **⚡ Real-Time Material Detection:** Upload JPG, JPEG, or PNG images to receive instant predictions.
-* **🧠 MobileNetV2 Architecture:** Employs an ImageNet-pretrained MobileNetV2 backbone fine-tuned on the harmonized `TrashBusters/combined` dataset (29,849 images).
-* **🔄 Model Resolution Hierarchy:** Automatically prioritizes modern `.keras` weights (`garbage_classifier.keras`) with a seamless fallback to legacy `.h5` models (`garbage_classifier.h5`).
-* **🛡️ Low-Confidence Warning System:** User-adjustable threshold slider (40%–90%, default 65%) that flags borderline classifications to prevent contamination in recycling streams.
-* **📊 In-App Evaluation Dashboard:** Real-time sidebar expander displaying test accuracy (82.67%), Macro F1-score (0.8264), and inference latency (~6.84 ms).
-* **🌱 Eco & Climate Insights:** Calculates potential CO₂ reductions achieved through recycling each classified material.
-* **🇺🇳 SDG Visual Mapping:** Visual badges displaying alignment with United Nations Sustainable Development Goals.
-* **🎨 Modern High-Contrast UI:** Full dark mode with a responsive three-column layout, custom cards, and styled file uploader.
+* **Real-Time Material Detection:** Upload JPG, JPEG, or PNG images to receive instant predictions.
+* **MobileNetV2 Architecture:** Employs an ImageNet-pretrained MobileNetV2 backbone fine-tuned on the harmonized `TrashBusters/combined` dataset (29,849 images).
+* **Model Resolution Hierarchy:** Automatically prioritizes modern `.keras` weights (`garbage_classifier.keras`) with a seamless fallback to legacy `.h5` models (`garbage_classifier.h5`).
+* **Low-Confidence Warning System:** User-adjustable threshold slider (40%–90%, default 65%) that flags borderline classifications to prevent contamination in recycling streams.
+* **In-App Evaluation Dashboard:** Real-time sidebar expander displaying test accuracy (82.67%), Macro F1-score (0.8264), and inference latency (~6.84 ms).
+* **Eco & Climate Insights:** Calculates potential CO₂ reductions achieved through recycling each classified material.
+* **SDG Visual Mapping:** Visual badges displaying alignment with United Nations Sustainable Development Goals.
+* **Modern High-Contrast UI:** Full dark mode with a responsive three-column layout, custom cards, and styled file uploader.
 
 ---
 
-## 🖥️ Interface Preview
+## Interface Preview
 
 | **Upload & Classify Interface** | **Results & Eco-Insights** |
 |:-------------------------------:|:--------------------------:|
@@ -43,7 +43,7 @@
 
 ---
 
-## 📊 Model Architecture & Held-Out Benchmark Results
+## Model Architecture & Held-Out Benchmark Results
 
 The model was retrained on the **Waste Classification Harmonized Dataset** ([`TrashBusters/combined`](https://huggingface.co/datasets/TrashBusters/combined)) using a two-phase transfer learning and fine-tuning strategy:
 1. **Phase 1 (Feature Extraction):** MobileNetV2 backbone frozen; trained custom Dense(256) + Dropout(0.5) + Softmax(6) head with Adam ($\text{lr}=10^{-3}$).
@@ -66,18 +66,18 @@ The model was retrained on the **Waste Classification Harmonized Dataset** ([`Tr
 
 | Waste Class | Precision | Recall | F1-Score | Held-Out Support |
 | :--- | :---: | :---: | :---: | :---: |
-| 📦 **Cardboard** | 86.11% | 88.60% | **0.8734** | 728 images |
-| 🍾 **Glass** | 86.68% | 85.07% | **0.8587** | 750 images |
-| 🛠️ **Metal** | 80.51% | 87.60% | **0.8391** | 750 images |
-| 📄 **Paper** | 79.35% | 78.40% | **0.7887** | 750 images |
-| 🧴 **Plastic** | 78.86% | 73.60% | **0.7614** | 750 images |
-| 🗑️ **Trash (General)** | 84.51% | 82.93% | **0.8371** | 750 images |
+| **Cardboard** | 86.11% | 88.60% | **0.8734** | 728 images |
+| **Glass** | 86.68% | 85.07% | **0.8587** | 750 images |
+| **Metal** | 80.51% | 87.60% | **0.8391** | 750 images |
+| **Paper** | 79.35% | 78.40% | **0.7887** | 750 images |
+| **Plastic** | 78.86% | 73.60% | **0.7614** | 750 images |
+| **Trash (General)** | 84.51% | 82.93% | **0.8371** | 750 images |
 
 Evaluation plots, including the [Confusion Matrix](artifacts/models/confusion_matrix.png), [Training Curves](artifacts/models/training_curves.png), and [Class Distribution](artifacts/models/class_distribution.png), are saved in `artifacts/models/`.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Domain | Technology | Description |
 | :--- | :--- | :--- |
@@ -90,7 +90,7 @@ Evaluation plots, including the [Confusion Matrix](artifacts/models/confusion_ma
 
 ---
 
-## ⚙️ Installation & Local Setup
+## Installation & Local Setup
 
 ### 1. Clone the Repository
 ```bash
@@ -122,7 +122,7 @@ The application will launch in your default browser at `http://localhost:8501`.
 
 ---
 
-## 📖 Usage Guide
+## Usage Guide
 
 1. **Launch App:** Access the live demo or run locally with `streamlit run app.py`.
 2. **Upload Waste Photo:** Click **Browse files** or drag-and-drop an image (`.jpg`, `.jpeg`, `.png`).
@@ -136,7 +136,7 @@ The application will launch in your default browser at `http://localhost:8501`.
 
 ---
 
-## 🚀 Model Retraining Workflow (Google Colab)
+## Model Retraining Workflow (Google Colab)
 
 ClassifAI provides a complete, reproducible retraining pipeline designed for free Google Colab T4 GPU environments:
 
@@ -151,7 +151,7 @@ ClassifAI provides a complete, reproducible retraining pipeline designed for fre
 
 ---
 
-## 🧪 Running Unit Tests
+## Running Unit Tests
 
 A comprehensive unit test suite ensures preprocessing safety, class taxonomy preservation, fallback resolution, and notebook cell validity:
 
@@ -167,7 +167,7 @@ python -m unittest discover tests
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```bash
 ClassifAI/
@@ -218,7 +218,7 @@ ClassifAI/
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcomed! If you would like to contribute:
 1. **Fork the Repository:** Click the 'Fork' button on GitHub.
@@ -242,14 +242,14 @@ Contributions are welcomed! If you would like to contribute:
 
 ---
 
-## 📜 License
+## License
 
 Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more details.
 
 ---
 
 <div align="center">
-  <p>Made with ❤️ by <b>Nithin G J</b></p>
+  <p>Made by <b>Nithin G J</b></p>
   <p>
     <a href="https://github.com/NithinGJ2005" target="_blank">
       <img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github" alt="GitHub Profile" />
